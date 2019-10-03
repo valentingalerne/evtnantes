@@ -185,7 +185,7 @@
       <p>Description : {{a.fields.description.substring(0, (30))}}</p>
       <p><br/>Nom : {{a.fields.nom}}</p>
       <p><br/>Lieu : {{a.fields.ville}}, {{a.fields.lieu_quartier}}</p>
-      <p>Le {{a.fields.date}}</p>
+      <p>Le {{moment(a.fields.date).format('DD/MM/YYYY')}}</p>
 		</li>
 	</ul>
 
@@ -193,6 +193,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.5/vue.min.js"></script>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script>
 <script>
 var apiURL = "https://data.nantesmetropole.fr/api/records/1.0/search/?dataset=244400404_agenda-evenements-nantes-nantes-metropole&facet=emetteur&facet=rubrique&facet=lieu&facet=ville&apikey=50bdf382de612832e92effdee05e315ddcfec31f0c23bb06eb1e0d59"
 

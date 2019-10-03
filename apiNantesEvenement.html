@@ -184,8 +184,9 @@
 		<li v-for="a in events">
 			<a v-bind:href="a.fields.lien_agenda" target="_blank"><img v-bind:src="a.fields.media_1" /></a>
 			<p>Description : {{a.fields.description.substring(0, (30))}}</p>
+      <p><br/>Nom : {{a.fields.nom}}</p>
       <p><br/>Lieu : {{a.fields.ville}}, {{a.fields.lieu_quartier}}</p>
-      <p><br/>Le {{a.fields.date}}</p>
+      <p>Le {{a.fields.date}}</p>
 		</li>
 	</ul>
 
